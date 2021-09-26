@@ -11,28 +11,28 @@ public class EmployeeAttendence {
 			int totalDays = 0;
 			int counterForPresentFullTime=0;
 			int counterForPresentHalfTime=0;
-			int totalSalary=0;
+			int totalSalary = 0;
 			while( totalDays <= 19 && totalWorkingHours <= 100)
 			{
 				totalDays++;
 				int employWorkingTime = (int)(Math.random() *3);
 				switch(employWorkingTime) {
 				case 1:
-					workingHours=8;
+					workingHoursc= 8;
 					counterForPresentFullTime = counterForPresentFullTime + workingHours;
 					if(counterForPresentFullTime == 100) {
 						totalWorkingHours = 100;
 					}
 					break;
 				case 2:
-					workingHours=4;
+					workingHours = 4;
 					counterForPresentHalfTime = counterForPresentHalfTime + workingHours;
 					if(counterForPresentHalfTime == 100 ) {
 						totalWorkingHours = 100;
 					}
 					break;
 				default:
-					workingHours=0;
+					workingHours = 0;
 					break;
 			}	
 		}
@@ -48,9 +48,9 @@ public class EmployeeAttendence {
 			}
 			else {
 				
-				totalSalary= wagPerHrs * totalWorkingHours;  
+				totalSalary = wagPerHrs * totalWorkingHours;  
 				System.out.println("employee for full time salery "+totalSalary);
-				totalSalary= wagPerHrs * totalWorkingHours ;  
+				totalSalary = wagPerHrs * totalWorkingHours ;  
 				System.out.println("employee for half time salery "+totalSalary);
 			
 			}
